@@ -12,7 +12,10 @@ function HomePage() {
       ></div>
       <div className="relative z-10 flex flex-col h-full">
         <NavBar />
-        <main className="flex-grow"></main>
+        <main className="flex-grow">
+          <div className="container mx-auto p-4">
+          </div>
+        </main>
         <Footer />
       </div>
     </div>
