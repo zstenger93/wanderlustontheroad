@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wanderlustontheroad/static/css/main.f855e6bc.css",
+    "main.js": "/wanderlustontheroad/static/js/main.5dc47ce6.js",
+    "static/js/453.a6a97343.chunk.js": "/wanderlustontheroad/static/js/453.a6a97343.chunk.js",
+    "static/media/logo.svg": "/wanderlustontheroad/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/wanderlustontheroad/index.html",
+    "main.f855e6bc.css.map": "/wanderlustontheroad/static/css/main.f855e6bc.css.map",
+    "main.5dc47ce6.js.map": "/wanderlustontheroad/static/js/main.5dc47ce6.js.map",
+    "453.a6a97343.chunk.js.map": "/wanderlustontheroad/static/js/453.a6a97343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.5dc47ce6.js"
+  ]
+}
