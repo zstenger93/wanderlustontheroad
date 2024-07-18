@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9effc254.css",
-    "main.js": "/static/js/main.b0e063ee.js",
-    "static/js/453.a6a97343.chunk.js": "/static/js/453.a6a97343.chunk.js",
-    "static/media/me.jpg": "/static/media/me.57bda333d452c78fcb79.jpg",
-    "static/media/DSC_5059.jpg": "/static/media/DSC_5059.00c615c2519efdcd25c2.jpg",
-    "index.html": "/index.html",
-    "main.9effc254.css.map": "/static/css/main.9effc254.css.map",
-    "main.b0e063ee.js.map": "/static/js/main.b0e063ee.js.map",
-    "453.a6a97343.chunk.js.map": "/static/js/453.a6a97343.chunk.js.map"
+    "main.css": "/wanderlustontheroad/static/css/main.9effc254.css",
+    "main.js": "/wanderlustontheroad/static/js/main.5ca75da9.js",
+    "static/js/453.a6a97343.chunk.js": "/wanderlustontheroad/static/js/453.a6a97343.chunk.js",
+    "static/media/me.jpg": "/wanderlustontheroad/static/media/me.57bda333d452c78fcb79.jpg",
+    "static/media/DSC_5059.jpg": "/wanderlustontheroad/static/media/DSC_5059.00c615c2519efdcd25c2.jpg",
+    "index.html": "/wanderlustontheroad/index.html",
+    "main.9effc254.css.map": "/wanderlustontheroad/static/css/main.9effc254.css.map",
+    "main.5ca75da9.js.map": "/wanderlustontheroad/static/js/main.5ca75da9.js.map",
+    "453.a6a97343.chunk.js.map": "/wanderlustontheroad/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9effc254.css",
-    "static/js/main.b0e063ee.js"
+    "static/js/main.5ca75da9.js"
   ]
 }
