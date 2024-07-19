@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../common/NavBar";
 import Footer from "../../common/Footer";
 import backgroundImage from "../../assets/city/DSC_1913.jpg";
@@ -32,7 +32,7 @@ function Gallery() {
     { src: minimal, alt: "Pyramids" },
     { src: minimal1, alt: "Pyramids" },
     { src: mountains, alt: "Pyramids" },
-    { src: somlo, alt: "Pyramids" },
+    { src: newspaperman, alt: "Pyramids" },
     { src: trainmotion, alt: "Pyramids" },
     { src: neonshop, alt: "Pyramids" },
     { src: elevator, alt: "Pyramids" },
@@ -40,18 +40,32 @@ function Gallery() {
     { src: guard, alt: "Pyramids" },
     { src: myhead, alt: "Pyramids" },
     { src: lookup, alt: "Pyramids" },
-    { src: newspaperman, alt: "Pyramids" },
-    { src: plane, alt: "Pyramids" },
     { src: realitycheck, alt: "Pyramids" },
+    { src: plane, alt: "Pyramids" },
+    { src: somlo, alt: "Pyramids" },
   ];
+
+  useEffect(() => {
+    const handleRightClick = (event) => {
+      event.preventDefault();
+    };
+
+    window.addEventListener("contextmenu", handleRightClick);
+
+    return () => {
+      window.removeEventListener("contextmenu", handleRightClick);
+    };
+  }, []);
+
   return (
-    <div className="relative h-screen" style={{ overscrollBehavior: "none" }}>
+    <div className="relative h-screen" style={{ overscrollBehavior: "none", loading: "lazy" }}>
       <div
         className=""
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "contain",
-          backgroundRepeat: "repeat",
+            backgroundRepeat: "repeat",
+          loading: "lazy",
         }}
       >
         <NavBar />
@@ -65,8 +79,7 @@ function Gallery() {
                     alt={image.alt}
                     className="
                     w-full h-auto rounded-xl hover:scale-105
-                    transition-transform duration-10 border-black
-                    border-r-2 border-b-2 hover:border-r-4 hover:border-b-4 "
+                    transition-transform duration-10"
                   />
                 </div>
               ))}
