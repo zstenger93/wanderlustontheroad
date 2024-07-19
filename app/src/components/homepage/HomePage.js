@@ -5,7 +5,7 @@ import backgroundImage from "../../assets/city/DSC_5059.jpg";
 
 function HomePage() {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen" style={{ overscrollBehavior: "none" }}>
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}

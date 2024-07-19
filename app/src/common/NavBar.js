@@ -5,10 +5,15 @@ function NavBar() {
   return (
     <header className=" p-4">
       <nav className="container mx-auto">
-        <ul className="flex justify-center space-x-4">
+        <ul className="flex justify-center space-x-4 font-bold">
           <li>
             <Link to="/" className="text-white">
               Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/gallery" className="text-white">
+              Gallery
             </Link>
           </li>
           <li>
