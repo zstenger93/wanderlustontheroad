@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import NavBar from "../../common/NavBar";
 import Footer from "../../common/Footer";
-import backgroundImage from "../../assets/city/DSC_1913.jpg";
+import backgroundImage from "../../assets/abstract/DSC_0583-Pano.jpg";
 import lonelyTree from "../../assets/nature/DSC_3758.jpg";
 import pyramids from "../../assets/travel/DSC_3976-2.jpg";
 import skiathos from "../../assets/city/DSC_2469.jpg";
@@ -23,29 +23,37 @@ import plane from "../../assets/street/DSC_3008-2.jpg";
 import realitycheck from "../../assets/street/DSC_3017-2.jpg";
 
 function Gallery() {
-  const images = [
-    { src: lonelyTree, alt: "Lonely Tree" },
-    { src: skiathos, alt: "Skiathos" },
-    { src: pyramids, alt: "Pyramids" },
-    { src: fireman, alt: "Pyramids" },
-    { src: somlo1, alt: "Pyramids" },
-    { src: minimal, alt: "Pyramids" },
-    { src: minimal1, alt: "Pyramids" },
-    { src: mountains, alt: "Pyramids" },
-    { src: newspaperman, alt: "Pyramids" },
-    { src: trainmotion, alt: "Pyramids" },
-    { src: neonshop, alt: "Pyramids" },
-    { src: elevator, alt: "Pyramids" },
-    { src: porsche, alt: "Pyramids" },
-    { src: guard, alt: "Pyramids" },
-    { src: myhead, alt: "Pyramids" },
-    { src: lookup, alt: "Pyramids" },
-    { src: realitycheck, alt: "Pyramids" },
-    { src: plane, alt: "Pyramids" },
-    { src: somlo, alt: "Pyramids" },
-  ];
+  const images = useMemo(
+    () => [
+      { src: lonelyTree, alt: "Lonely Tree" },
+      { src: skiathos, alt: "Skiathos" },
+      { src: pyramids, alt: "Pyramids" },
+      { src: fireman, alt: "Fireman" },
+      { src: somlo1, alt: "Somlo1" },
+      { src: minimal, alt: "Minimal" },
+      { src: minimal1, alt: "Minimal1" },
+      { src: mountains, alt: "Mountains" },
+      { src: newspaperman, alt: "Newspaperman" },
+      { src: trainmotion, alt: "Trainmotion" },
+      { src: neonshop, alt: "Neonshop" },
+      { src: elevator, alt: "Elevator" },
+      { src: porsche, alt: "Porsche" },
+      { src: guard, alt: "Guard" },
+      { src: myhead, alt: "Myhead" },
+      { src: lookup, alt: "Lookup" },
+      { src: realitycheck, alt: "Realitycheck" },
+      { src: plane, alt: "Plane" },
+      { src: somlo, alt: "Somlo" },
+    ],
+    []
+  );
 
   useEffect(() => {
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = image.src;
+    });
+
     const handleRightClick = (event) => {
       event.preventDefault();
     };
@@ -55,16 +63,19 @@ function Gallery() {
     return () => {
       window.removeEventListener("contextmenu", handleRightClick);
     };
-  }, []);
+  }, [images]);
 
   return (
-    <div className="relative h-screen" style={{ overscrollBehavior: "none", loading: "lazy" }}>
+    <div
+      className="relative h-screen"
+      style={{ overscrollBehavior: "none", loading: "lazy" }}
+    >
       <div
         className=""
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "contain",
-            backgroundRepeat: "repeat",
+          backgroundRepeat: "repeat",
           loading: "lazy",
         }}
       >
@@ -75,11 +86,12 @@ function Gallery() {
               {images.map((image, index) => (
                 <div key={index} className="gallery-item">
                   <img
+                    loading="lazy"
                     src={image.src}
                     alt={image.alt}
                     className="
-                    w-full h-auto rounded-xl hover:scale-105
-                    transition-transform duration-10"
+                    w-full h-auto rounded-xl hover:scale-95
+                    transition-transform duration-5"
                   />
                 </div>
               ))}
