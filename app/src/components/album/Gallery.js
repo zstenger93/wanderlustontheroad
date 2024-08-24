@@ -46,7 +46,7 @@ import bee from "../../assets/nature/jpeg-optimizer_DSC_6215.jpg";
 import thesteeler from "../../assets/nature/jpeg-optimizer_DSC_6236.jpg";
 import snake from "../../assets/nature/jpeg-optimizer_DSC_6427.jpg";
 import rabbitcolor from "../../assets/nature/jpeg-optimizer_DSC_6650-2.jpg";
-import rabbitbw from "../../assets/nature/jpeg-optimizer_DSC_6650-3.jpg";
+// import rabbitbw from "../../assets/nature/jpeg-optimizer_DSC_6650-3.jpg";
 import screame from "../../assets/portrait/jpeg-optimizer_DSC_1634.jpg";
 import box from "../../assets/portrait/jpeg-optimizer_DSC_6122-2.jpg";
 import reflection from "../../assets/portrait/jpeg-optimizer_DSC_6182.jpg";
@@ -82,8 +82,8 @@ function Gallery() {
       { src: newspaperman, alt: "Newspaperman" },
       { src: trainmotion, alt: "The motion of my running mind" },
       { src: neonshop, alt: "Neonshop" },
-      { src: elevator, alt: "Elevator" },
-      { src: porsche, alt: "Porsche" },
+      { src: elevator, alt: "A different perspective" },
+      { src: porsche, alt: "Porsche left after itself" },
       { src: guard, alt: "Not on my watch!" },
       { src: myhead, alt: "My head!" },
       { src: lookup, alt: "Look up!" },
@@ -94,26 +94,26 @@ function Gallery() {
       { src: morocco, alt: "Morning in the labirinth" },
       { src: ferrari, alt: "Ferrari" },
       { src: bpb, alt: "Clouds over the citadell" },
-      { src: lightt, alt: "The guiding light" },
+      { src: lightt, alt: "The guiding light in the darkness" },
       { src: rainw, alt: "A rainy day" },
-      { src: foggydome, alt: "Foggy dome" },
+      { src: foggydome, alt: "When the past becomes foggy, the future is in danger" },
       { src: godzilla, alt: "Godzilla is back" },
       { src: threetower, alt: "Three tower" },
-      { src: cloudcatching, alt: "Cloud catching" },
+      { src: cloudcatching, alt: "Catching clouds" },
       { src: muskateers, alt: "The three musketeers" },
       { src: longwalk, alt: "Sunrise at the shores" },
       { src: birds, alt: "Pair" },
-      { src: sahara, alt: "At the end of the world in the Sahara" },
+      { src: sahara, alt: "At the end of the world" },
       { src: bird, alt: "The poser" },
       { src: fish, alt: "Fish warmup" },
-      { src: otthon, alt: "Otthon" },
+      { src: otthon, alt: "Home" },
       { src: longbird, alt: "Lookout" },
       { src: flyingbird, alt: "I sea my lunch there!" },
       { src: bee, alt: "I can't Beelieve it!" },
       { src: thesteeler, alt: "An attempt to steal" },
       { src: snake, alt: "Snake the game" },
-      { src: rabbitcolor, alt: "Rabbit land" },
-      { src: rabbitbw, alt: "Rabbit land" },
+      { src: rabbitcolor, alt: "Rabbit island" },
+      // { src: rabbitbw, alt: "Rabbit land" },
       { src: screame, alt: "I scream inside" },
       { src: box, alt: "Look! Someone is coming!" },
       { src: reflection, alt: "Reflection of knowledge" },
@@ -124,7 +124,7 @@ function Gallery() {
       { src: cat, alt: "Leave me alone" },
       { src: kids, alt: "Kids on the way to school" },
       { src: waiting, alt: "Waiting" },
-      { src: walking, alt: "Walking" },
+      { src: walking, alt: "The way home" },
       { src: shifting, alt: "Shifting reality" },
       { src: taxi, alt: "Taxi!" },
       { src: cross, alt: "Crossing minimalism" },

@@ -24,7 +24,29 @@ function HomePage() {
       ></div>
       <div className="relative z-10 flex flex-col h-full">
         <NavBar />
-        <main className="flex-grow"></main>
+        <main className="flex-grow flex items-start justify-center">
+          <div
+            className="text-center text-white font-semibold text-lg bg-black bg-opacity-50
+            p-4 rounded-xl shadow-lg md:bg-transparent md:bg-opacity-0"
+            style={{ position: "absolute", top: "13%" }}
+          >
+            Creativity is
+            <br />
+            seeing what
+            <br />
+            everyone else
+            <br />
+            has seen,
+            <br />
+            and thinking
+            <br />
+            what no one
+            <br />
+            else has
+            <br />
+            thought.
+          </div>
+        </main>
         <Footer />
       </div>
     </div>

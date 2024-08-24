@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <header className="p-4 mb-4">
       <nav className="container mx-auto">
-        <ul className="flex justify-center space-x-4 font-bold">
+        <ul className="flex justify-center space-x-4 font-bold text-lg">
           <li>
             <Link to="/" className="text-white">
               Home
