@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wanderlustontheroad/static/css/main.85438fbd.css",
-    "main.js": "/wanderlustontheroad/static/js/main.448300aa.js",
+    "main.css": "/wanderlustontheroad/static/css/main.a8c625fc.css",
+    "main.js": "/wanderlustontheroad/static/js/main.80ffb165.js",
     "static/js/453.5565870f.chunk.js": "/wanderlustontheroad/static/js/453.5565870f.chunk.js",
     "static/media/DSC_5531_2-2.jpg": "/wanderlustontheroad/static/media/DSC_5531_2-2.2f552cac2c1e8b0fbc3f.jpg",
     "static/media/DSC_2409.jpg": "/wanderlustontheroad/static/media/DSC_2409.4ef8669502ca3997fe7a.jpg",
@@ -43,7 +43,6 @@
     "static/media/jpeg-optimizer_DSC_6650-2.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_6650-2.e3e7a14a77188e389571.jpg",
     "static/media/jpeg-optimizer_DSC_6427.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_6427.1ab0d1737be815f6d13b.jpg",
     "static/media/jpeg-optimizer_DSC_8295.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_8295.9f335dd6a942f0562ff2.jpg",
-    "static/media/jpeg-optimizer_DSC_6650-3.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_6650-3.22241e0b5a62fb5495f2.jpg",
     "static/media/DSC_3008-2.jpg": "/wanderlustontheroad/static/media/DSC_3008-2.1d30ca4b2409c151e5af.jpg",
     "static/media/jpeg-optimizer_DSC_3041.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_3041.b83037a2a3f208299989.jpg",
     "static/media/jpeg-optimizer_DSC_4242.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_4242.fc33f27a98dfbe8070f3.jpg",
@@ -69,12 +68,12 @@
     "static/media/jpeg-optimizer_DSC_6236.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_6236.38c08005e8d5ec02bade.jpg",
     "static/media/jpeg-optimizer_DSC_4138.jpg": "/wanderlustontheroad/static/media/jpeg-optimizer_DSC_4138.0bbafd475d178c148cc9.jpg",
     "index.html": "/wanderlustontheroad/index.html",
-    "main.85438fbd.css.map": "/wanderlustontheroad/static/css/main.85438fbd.css.map",
-    "main.448300aa.js.map": "/wanderlustontheroad/static/js/main.448300aa.js.map",
+    "main.a8c625fc.css.map": "/wanderlustontheroad/static/css/main.a8c625fc.css.map",
+    "main.80ffb165.js.map": "/wanderlustontheroad/static/js/main.80ffb165.js.map",
     "453.5565870f.chunk.js.map": "/wanderlustontheroad/static/js/453.5565870f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85438fbd.css",
-    "static/js/main.448300aa.js"
+    "static/css/main.a8c625fc.css",
+    "static/js/main.80ffb165.js"
   ]
 }
