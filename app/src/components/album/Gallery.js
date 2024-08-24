@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import NavBar from "../../common/NavBar";
 import Footer from "../../common/Footer";
 import backgroundImage from "../../assets/abstract/DSC_0583-Pano.jpg";
@@ -23,27 +23,29 @@ import plane from "../../assets/street/DSC_3008-2.jpg";
 import realitycheck from "../../assets/street/DSC_3017-2.jpg";
 
 function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const images = useMemo(
     () => [
       { src: lonelyTree, alt: "Lonely Tree" },
       { src: skiathos, alt: "Skiathos" },
-      { src: pyramids, alt: "Pyramids" },
-      { src: fireman, alt: "Fireman" },
-      { src: somlo1, alt: "Somlo1" },
-      { src: minimal, alt: "Minimal" },
-      { src: minimal1, alt: "Minimal1" },
-      { src: mountains, alt: "Mountains" },
+      { src: pyramids, alt: "Back in time" },
+      { src: fireman, alt: "Don't play with fire!" },
+      { src: somlo1, alt: "Somlo sunset" },
+      { src: minimal, alt: "Art over the water" },
+      { src: minimal1, alt: "Countryside morning" },
+      { src: mountains, alt: "When Mt. Fuji welcomes the sunrise" },
       { src: newspaperman, alt: "Newspaperman" },
-      { src: trainmotion, alt: "Trainmotion" },
+      { src: trainmotion, alt: "The motion of my running mind" },
       { src: neonshop, alt: "Neonshop" },
       { src: elevator, alt: "Elevator" },
       { src: porsche, alt: "Porsche" },
-      { src: guard, alt: "Guard" },
-      { src: myhead, alt: "Myhead" },
-      { src: lookup, alt: "Lookup" },
-      { src: realitycheck, alt: "Realitycheck" },
+      { src: guard, alt: "Not on my watch!" },
+      { src: myhead, alt: "My head!" },
+      { src: lookup, alt: "Look up!" },
+      { src: realitycheck, alt: "Reality check" },
       { src: plane, alt: "Plane" },
-      { src: somlo, alt: "Somlo" },
+      { src: somlo, alt: "Somlo sunset" },
     ],
     []
   );
@@ -65,6 +67,14 @@ function Gallery() {
     };
   }, [images]);
 
+  const handleImageClick = (image) => {
+    if (selectedImage === image) {
+      setSelectedImage(null);
+    } else {
+      setSelectedImage(image);
+    }
+  };
+
   return (
     <div
       className="relative h-screen"
@@ -84,15 +94,30 @@ function Gallery() {
           <div className="container mx-auto p-4">
             <div className="gallery">
               {images.map((image, index) => (
-                <div key={index} className="gallery-item">
+                <div
+                  key={index}
+                  className={`gallery-item ${
+                    selectedImage === image
+                      ? "fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+                      : ""
+                  }`}
+                  onClick={() => handleImageClick(image)}
+                >
                   <img
                     loading="lazy"
                     src={image.src}
                     alt={image.alt}
-                    className="
-                    w-full h-auto rounded-xl hover:scale-95
-                    transition-transform duration-5"
+                    className={`w-full h-auto rounded-xl hover:scale-95 transition-transform duration-5 ${
+                      selectedImage === image
+                        ? "max-w-full max-h-full object-contain"
+                        : ""
+                    }`}
                   />
+                  {selectedImage === image && (
+                    <div className="absolute bottom-0 bg-black bg-opacity-50 text-white p-2 rounded-t-xl">
+                      {image.alt}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
