@@ -27,8 +27,8 @@ function HomePage() {
         <main className="flex-grow flex items-start justify-center">
           <div
             className="text-center text-white font-semibold text-lg bg-black bg-opacity-50
-            p-4 rounded-xl shadow-lg md:bg-transparent md:bg-opacity-0"
-            style={{ position: "absolute", top: "13%" }}
+            p-4 rounded-xl md:bg-transparent md:bg-opacity-0"
+            style={{ position: "absolute", top: "10%" }}
           >
             Creativity is
             <br />
